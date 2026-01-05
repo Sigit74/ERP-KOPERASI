@@ -10,8 +10,8 @@ const storedUrl = localStorage.getItem('simultan_sb_url');
 const storedKey = localStorage.getItem('simultan_sb_key');
 
 // 2. Default data (Fallback jika Settings belum diisi)
-const DEFAULT_URL = 'https://prrtyuwfylbayyybmdqs.supabase.co';
-const DEFAULT_KEY = 'sb_publishable_NbyB_duJem3zV5ZU-YdJ_w_-emrkRQI';
+const DEFAULT_URL = 'https://rwwrdrchyvcwkxdjamcz.supabase.co';
+const DEFAULT_KEY = 'sb_publishable_roZRuGUF7neoCWoWFd6ldg_yczRQ9HN';
 
 const SUPABASE_URL = storedUrl || DEFAULT_URL;
 const SUPABASE_ANON_KEY = storedKey || DEFAULT_KEY;
