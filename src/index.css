@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GLOBAL PRINT STYLES */
+@media print {
+    @page {
+        margin: 0.5cm;
+    }
+
+    body {
+        background: white;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* HIDE UI ELEMENTS */
+    nav,
+    header,
+    footer,
+    button,
+    .no-print,
+    [role="tooltip"],
+    .fixed,
+    .sticky,
+    svg.lucide {
+        display: none !important;
+    }
+
+    /* Ensure main content is visible */
+    main,
+    #root,
+    .print-content {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        background: white !important;
+    }
+
+    /* Reset Card Styles for Paper */
+    .bg-white,
+    .rounded-xl,
+    .shadow-xl {
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+    }
+
+    /* Ensure text is black for legibility */
+    * {
+        color: black !important;
+    }
+}
